@@ -1,9 +1,5 @@
 import styled from 'styled-components/native';
-
-export const Container = styled.View`
-  flex: 1;
-  padding: 30px;
-`;
+import { RectButton } from 'react-native-gesture-handler';
 
 export const Header = styled.View`
   align-items: center;
@@ -41,7 +37,7 @@ export const Stars = styled.FlatList.attrs({
   margin-top: 20px;
 `;
 
-export const Starred = styled.View`
+export const Starred = styled(RectButton)`
   background: #f5f5f5;
   border-radius: 4px;
   padding: 10px 15px;
@@ -74,4 +70,40 @@ export const Author = styled.Text`
   font-size: 13px;
   color: #666;
   margin-top: 2px;
+`;
+
+export const Loading = styled.View`
+  margin-top: 20px;
+
+  flex: 1;
+  flex-direction: row;
+
+  max-height: 150px;
+
+  justify-content: center;
+  align-items: center;
+
+  background: #eee;
+  border-radius: 10px;
+`;
+
+export const LoadingText = styled.Text`
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+`;
+
+export const LoadingMore = styled.View`
+  margin-top: 20px;
+
+  flex-direction: row;
+
+  height: 50px;
+
+  justify-content: center;
+  align-items: center;
+
+  background: #eee;
+  border-radius: 10px;
 `;
