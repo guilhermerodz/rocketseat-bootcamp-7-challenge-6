@@ -7,8 +7,9 @@ import PropTypes from 'prop-types';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import api from '../../services/api';
 
+import Container from '../../components/Container';
+
 import {
-  Container,
   Form,
   Input,
   SubmitButton,
